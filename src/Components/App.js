@@ -22,6 +22,9 @@ const App = () => {
                     <Element name='about-me'>
                         <AboutMe />
                     </Element>
+                    <Element name='projects'>
+                        <Projects />
+                    </Element>
                 </motion.div>
             </AnimatePresence>
         </div>
