@@ -4,6 +4,10 @@ import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
+    const navbarStyle = {
+        background: 'linear-gradient(to right, #e66465, #9198e5)',
+    };
+    
     return (
         <nav className='navbar'>
             <img src={logo} alt='Z logo' className='logo'/>

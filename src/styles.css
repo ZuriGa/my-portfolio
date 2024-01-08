@@ -5,6 +5,84 @@
     text-decoration: none;
     background: transparent;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(#f38282, #ab66cf);
+    color: #fff;
+}
+.content-container {
+    padding-top: 70px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+.appMenu {
+    display: flex;
+    gap: 20px;
+}
+.appMenuListItem {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.appMenuListItem:hover {
+    color: rgb(183, 89, 183);
+}
+.appMenuBtn {
+    background-color: rgb(183, 89, 183); 
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.appMenuBtn:hover {
+    background-color: purple;
+}
+
+.about-me-card {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.about-me-card h2 {
+    color: #333;
+}
+.about-me-card p {
+    color: #555;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    margin-right: 10px;
+}
+.social-icons a:hover {
+    color: purple;
+}
 
 .project-list {
     display: flex;

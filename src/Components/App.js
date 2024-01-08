@@ -20,10 +20,14 @@ const App = () => {
             <AnimatePresence mode='wait'>
                 <motion.div key='content'>
                     <Element name='about-me'>
-                        <AboutMe />
+                        <div className='section-container'>
+                            <AboutMe />
+                        </div>
                     </Element>
                     <Element name='projects'>
-                        <Projects />
+                        <div className='section-container'>
+                            <Projects />
+                        </div>
                     </Element>
                 </motion.div>
             </AnimatePresence>
