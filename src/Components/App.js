@@ -2,6 +2,7 @@ import React from 'react';
 import AboutMe from './AboutMe';
 import Navbar from './Navbar';
 import Projects from './Projects';
+import Skills from './Skills';
 import { Element, scroller } from 'react-scroll';
 import Modal from 'react-modal';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -29,6 +30,11 @@ const App = () => {
                     <Element name='projects'>
                         <div className='section-container'>
                             <Projects />
+                        </div>
+                    </Element>
+                    <Element name='skills'>
+                        <div className='section-container'>
+                            <Skills />
                         </div>
                     </Element>
                 </motion.div>
