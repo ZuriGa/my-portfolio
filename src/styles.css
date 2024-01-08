@@ -58,7 +58,7 @@ body {
 
 .about-me-card {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 19px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -92,7 +92,7 @@ body {
 
 .project-card {
     width: 300px;
-    margin: 16px;
+    margin: 19px;
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -128,7 +128,7 @@ h3 {
 }
 .project-details {
     padding: 1rem;
-    margin-top: 12px;
+    margin-top: 15px;
     p {
         margin-bottom: 0.5rem;
     }

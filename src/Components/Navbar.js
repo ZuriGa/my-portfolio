@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './../assets/logoZ.png';
 import { Link } from 'react-scroll';
+import ContactMe from './ContactMe';
 
 
 const Navbar = () => {
-    const navbarStyle = {
-        background: 'linear-gradient(to right, #e66465, #9198e5)',
-    };
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false);
     
+    const openContactMe = () => {
+        setIsContactModalOpen(true);
+    };
+
+    const closeContactMe = () => {
+        setIsContactModalOpen(false);
+    };
+
     return (
         <nav className='navbar'>
             <img src={logo} alt='Z logo' className='logo'/>
@@ -17,9 +24,10 @@ const Navbar = () => {
                 <Link to='projects' className='appMenuListItem'>Projects</Link>
                 <Link to='skills' className='appMenuListItem'>Skills</Link>
             </div>
-            <button className='appMenuBtn'>Contact Me</button>
+            <button className='appMenuBtn' onClick={openContactMe}>Contact Me</button>
+            <ContactMe isOpen={isContactModalOpen} onRequestClose={closeContactMe} />
         </nav>
-    )
-}
+    );
+};
 
 export default Navbar;

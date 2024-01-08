@@ -3,8 +3,10 @@ import AboutMe from './AboutMe';
 import Navbar from './Navbar';
 import Projects from './Projects';
 import { Element, scroller } from 'react-scroll';
+import Modal from 'react-modal';
 import { motion, AnimatePresence } from 'framer-motion';
 
+Modal.setAppElement('#root');
 
 const App = () => {
     const scrollToSection = (section) => {

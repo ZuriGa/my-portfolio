@@ -15,8 +15,10 @@ const imageMap = {
 const Project = ({ project }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
-    const handleToggleExpand = () => {
+    const handleToggleExpand = (event) => {
+        if (event.target.classList.contains('project-card')) {
         setIsExpanded(!isExpanded);
+        }
     };
 
 
@@ -27,7 +29,7 @@ const Project = ({ project }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            onClick={handleToggleExpand}
+            onClick={(event) => handleToggleExpand(event)}
         >
             <div className='project-header'>
                 <img src={imageMap[project.title]} alt={project.title} />
