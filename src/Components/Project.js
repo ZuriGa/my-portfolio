@@ -46,6 +46,11 @@ const Project = ({ project }) => {
                             ))}
                         </ul>
                     </div>
+                    {project.githubLink && (
+                        <p>
+                            <strong>GitHub Link:</strong> <a href={project.githubLink} target='_blank' rel='noopener noreferrer'>{project.githubLink}</a>
+                        </p>
+                    )}
                 </div>
             )}
         </motion.div>

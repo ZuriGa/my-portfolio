@@ -1,0 +1,9 @@
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(#ab66cf, #f38282);
+    position: block;
+    bottom: 0;
+    width: 100%;
+}
+
