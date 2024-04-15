@@ -42,7 +42,7 @@ Portfolio using JavaScript and React.
 
 MIT License
 
-Copyright (c) 2023 Zuri Gallegos
+Copyright (c) 2024 Zuri Gallegos
 
 ## How to set up the template.
 clone this repo using git clone <url>
