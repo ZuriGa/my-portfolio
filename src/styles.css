@@ -15,15 +15,20 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: linear-gradient(#f38282, #ab66cf);
+    background: linear-gradient(217deg, rgba(233, 96, 235, 0.8), rgba(134, 2, 221, 0) 70.71%),
+    linear-gradient(336deg, rgba(200, 0, 255, 0.8), rgba(212, 141, 236, 0.57) 70.71%);
     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: x-large;
+    font-family:"DM Sans", sans-serif; 
+    
 }
 .content-container {
     padding-top: 70px;
 }
 
 .logo {
-    width: 50px;
+    width: 70px;
     height: auto;
 }
 .appMenu {
@@ -31,18 +36,24 @@ body {
     gap: 20px;
 }
 .appMenuListItem {
-    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
     text-decoration: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(236, 201, 236, 0.321);
     transition: color 0.3s ease;
 }
 .appMenuListItem:hover {
-    color: rgb(183, 89, 183);
+    color: rgb(165, 6, 165);
+    text-shadow: 2px 2px 4px rgba(226, 223, 223, 0.5);
 }
 .appMenuBtn {
-    background-color: rgb(183, 89, 183); 
+    background-color: rgba(204, 41, 249, 0.8); 
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -173,4 +184,5 @@ h2 {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
+    background-color:  rgba(204, 41, 249, 0.8);
 }
